@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FISViewController : UIViewController
+@interface FISViewController : UIViewController {
+    
+    NSTimer *timer;
+    int countInt;
+}
+
+- (IBAction)startButtonTapped:(id)sender;
+- (IBAction)pauseButtonTapped:(id)sender;
+- (IBAction)cancelButtonTapped:(id)sender;
+
+
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePickerLabel;
+
 
 @end
